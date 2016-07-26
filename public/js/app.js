@@ -54,7 +54,10 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var canvas = new _Canvas2.default('#canvas-wrap');
+	// use without extension
+	
+	var canvas = new _Canvas2.default('#canvas-wrap'); // use with extension
+	
 	
 	canvas.draw();
 	
@@ -73,9 +76,11 @@
 	    console.log('version: 1.1.0');
 	}
 	
-	function add(a, b) {
+	function add() {
 	    var result = 0;
-	    result = a + b;
+	    Array.prototype.forEach.call(arguments, function (value) {
+	        result += value;
+	    });
 	    return result;
 	}
 	

@@ -11,6 +11,7 @@ use following command for new project:
 
 `npm i --save-dev babel-register babel-core babel-loader babel-preset-es2015 babel-preset-stage-0 webpack`
 
+`stage-0` is not require, you can remove from above command and `.babelrc` file.
 
 if run this project you need run command:
 
